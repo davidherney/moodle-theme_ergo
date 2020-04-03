@@ -1,0 +1,166 @@
+/*******************
+Bodys
+*******************/
+body {
+    background-image: var(--second-bg-url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000;
+}
+
+body#page-enrol-index {
+    #region-main {
+        .generalbox {
+            float: left;
+            width: 30%;
+        }
+        .generalbox:last-of-type {
+            width: 70%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+}
+
+body.pagelayout-popup {
+    margin-left: 0;
+}
+/*******************
+Pages
+*******************/
+#page {
+    margin-top: $navbar-height;
+
+    &.container-fluid {
+        padding: 2rem 2rem 0 2rem;
+    }
+}
+
+#page-admin-index.pagelayout-maintenance {
+    margin-left: 0;
+
+    #page-wrapper::after {
+        min-height: inherit;
+    }
+}
+
+#page-wrapper {
+    height: unset   ;
+}
+
+/*******************
+Card
+*******************/
+.card {
+    border-color: $card-border-color;
+    border-radius: $card-border-radius;
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+    &.card-block,
+    .card-block,
+    .card-body {
+        padding: $m-card-padding;
+    }
+
+    &.card-block {
+        background: transparent;
+    }
+}
+
+section.card {
+    background-color: transparent;
+}
+
+/*******************
+Headings
+*******************/
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    color: $headings-color;
+    font-family: $font-family-sans-serif;
+    font-weight: $headings-font-weight;
+    border-left: 4px solid #e7b12e;
+    padding-left: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    color: $brand-primary;
+    font-weight: bold;
+    margin-top: 50px;
+    text-decoration: underline $brand-primary 4px;
+}
+
+h5 {
+    font-size: 16px;
+    color: $brand-primary;
+    font-weight: bold;
+    margin-top: 30px;
+    text-decoration: underline $brand-primary;
+}
+
+/* Third party plugins compatibility. */
+/* Course format grid */
+#gridshadebox_content {
+    top: 80px !important;
+}
+
+.popover .arrow {
+    bottom: -8px;
+}
+
+a {
+    color: #7c8f8c;
+}
+
+b, strong {
+    font-weight:bold;
+}
+
+i, em {
+    color: $brand-primary;
+    font-weight:800;
+    font-style: italic;
+}
+
+#page-header {
+    .card {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .card-block {
+        padding: 0;
+    }
+}
+
+.nav-tabs {
+
+    border: none;
+
+    .nav-item {
+        margin-right: 10px;
+    }
+
+    .nav-link {
+        border: none;
+    }
+
+    .nav-link:hover,
+    .nav-link.active:hover,
+    .nav-link.active {
+        color: #77a182 !important;
+        border-bottom: 2px solid #77a182;
+    }
+}

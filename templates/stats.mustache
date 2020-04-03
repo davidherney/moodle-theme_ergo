@@ -1,0 +1,19 @@
+<section id="box-stats">
+    <h2>{{#str}}statstitle, theme_ergo{{/str}}</h2>
+
+    <div class="stats-items">
+        {{#stats}}
+            <div class="one-statistic">
+                {{#url}}<a href="{{{ url }}}" target="_blank">{{/url}}
+                        <h3>{{{ content }}}</h3>
+                {{#url}}</a>{{/url}}
+
+                {{#image}}
+                    {{#url}}<a href="{{{ url }}}" target="_blank">{{/url}}
+                        <img src="{{{ image }}}" title="{{ content }}" />
+                    {{#url}}</a>{{/url}}
+                {{/image}}
+            </div>
+        {{/stats}}
+    </div>
+</section>

@@ -1,0 +1,25 @@
+{{{ output.doctype }}}
+<html {{{ output.htmlattributes }}}>
+<head>
+    <title>{{{ output.page_title }}}</title>
+    <link rel="shortcut icon" href="{{{ output.favicon }}}" />
+    {{{ output.standard_head_html }}}
+
+    {{>theme_ergo/generalheaders}}
+
+    <script>
+        M.ergo = M.ergo || {};
+
+        {{#globalvars}}
+        M.ergo.courseid = {{ globalvars.courseid }};
+        {{/globalvars}}
+    </script>
+</head>
+
+<body {{{ bodyattributes }}}>
+
+{{>theme_ergo/header}}
+
+<div id="page-wrapper">
+
+    {{{ output.standard_top_of_body_html }}}

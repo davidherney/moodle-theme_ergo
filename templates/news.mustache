@@ -1,0 +1,29 @@
+<section id="box-news">
+    <h2>{{#str}}newstitle, theme_ergo{{/str}}</h2>
+
+    <div class="horizontalslider flexslider" data-width="360">
+        <ul class="slides">
+        {{#news}}
+            <li class="one-news">
+                {{#image}}
+                    {{#url}}<a href="{{{ url }}}">{{/url}}
+                    <img src="{{{ image }}}" />
+                    {{#url}}</a>{{/url}}
+                {{/image}}
+
+                {{{ content }}}
+
+                {{^image}}
+                    {{#url}}
+                        <div>
+                            <a href="{{{ url }}}">
+                                {{#str}}more, theme_ergo{{/str}}
+                            </a>
+                        </div>
+                    {{/url}}
+                {{/image}}
+            </li>
+        {{/news}}
+        </ul>
+    </div>
+</section>

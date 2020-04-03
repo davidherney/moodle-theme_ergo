@@ -1,0 +1,86 @@
+    {{#hasblocks}}
+        <i id="sidepreopen-control"
+            aria-expanded="{{#draweropenright}}true{{/draweropenright}}{{^draweropenright}}false{{/draweropenright}}"
+            aria-controls="sidepre-blocks"
+            data-action="toggle-drawer"
+            data-side="right"
+            data-preference="sidepre-open"
+            title="{{#str}} showhideblocks, theme_ergo {{/str}}">
+        </i>
+
+        <section id="sidepre-blocks" data-region="blocks-column" class="hidden-print">
+            {{{ sidepreblocks }}}
+        </section>
+    {{/hasblocks}}
+
+    {{{ output.standard_after_main_region_html }}}
+
+    {{#hasdrawertoggle}}
+        {{> theme_ergo/nav-drawer }}
+    {{/hasdrawertoggle}}
+</div><!-- Ends .page-wrapper -->
+
+{{> theme_ergo/footer }}
+
+{{#js}}
+require(['theme_ergo/coursechanges'], function(module) {
+    module.init();
+});
+{{/js}}
+
+</body>
+</html>
+{{#js}}
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+
+require(['theme_ergo/metismenu', 'jquery'], function(metisMenu, $) {
+    $(".metismenu").metisMenu();
+});
+
+require(['theme_ergo/horizontalslider'], function(horizontalSlider) {
+    $(".horizontalslider").each(function() {
+        var $this = $(this);
+
+        var prop = {
+            "animation": "slide",
+            "itemMargin": 15
+        };
+
+        if ($this.attr('data-autoplay') && $this.attr('data-autoplay') == 'true') {
+            prop.slideshow = true;
+        } else {
+            prop.slideshow = false;
+        }
+
+        if ($this.attr('data-loop') && $this.attr('data-loop') == 'true') {
+            prop.animationLoop = true;
+        }
+
+        if ($this.attr('data-width')) {
+            prop.itemWidth = parseInt($this.attr('data-width'));
+        }
+
+        horizontalSlider.init($this, prop);
+    });
+});
+
+require([], function() {
+    var iconsearch = document.querySelector('.ergo-search-input .icon-magnifier');
+    var btnclosesearch = document.querySelector('.search-input-form .close-search');
+    var searchinputform = document.querySelector('.ergo-search-input');
+
+    if (iconsearch) {
+
+        var togglesearchinputform = function() {
+            searchinputform.classList.toggle('expanded');
+        }
+
+        iconsearch.onclick = togglesearchinputform;
+        btnclosesearch.onclick = togglesearchinputform;
+    }
+});
+
+{{/js}}

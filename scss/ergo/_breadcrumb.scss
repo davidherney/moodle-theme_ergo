@@ -1,0 +1,109 @@
+#page-navbar {
+    .breadcrumb-nav {
+        .breadcrumb {
+            padding: 0.5em 1em;
+            border-radius: .25em;
+
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            li {
+                display: inline-block;
+                float: left;
+                margin: 0.5em 0;
+
+                &:after {
+                    /* this is the separator between items */
+                    display: inline-block;
+                    content: '\00bb';
+                    margin: 0 .6em;
+                    color: #959fa5;
+                }
+                &:before {
+                    content: '';
+                    padding: 0;
+                }
+
+                .no-link {
+                    border-color: #7c8f8c;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .breadcrumb li:last-of-type::after {
+            /* hide separator after the last item */
+            display: none;
+        }
+        .breadcrumb li > * {
+            /* single step */
+            display: inline-block;
+            font-size: 14px;
+            color: #12202a;
+            position: relative;
+            padding: .4em .8em;
+            background: #fff;
+            border: 3px solid #afcc91;
+            border-radius: 5px;
+        }
+        .no-touch .breadcrumb a:hover {
+            /* steps already visited */
+            color: #96c03d;
+        }
+
+        .breadcrumb li {
+            position: relative;
+            padding: 0;
+            margin: 4px 20px 4px 0;
+        }
+        .breadcrumb li::after {
+            margin: 0 1em;
+        }
+
+        .breadcrumb li:last-of-type {
+            margin-right: 0;
+        }
+
+        .breadcrumb li.current > * {
+            /* selected step */
+            color: #fff;
+            background-color: #96c03d;
+            border-color: #96c03d;
+            border-radius: 5px;
+        }
+
+        .breadcrumb li:first-of-type > * {
+            padding-left: 1.6em;
+        }
+
+        .breadcrumb li:last-of-type > * {
+            padding-right: 1.6em;
+        }
+
+        .no-touch .breadcrumb a:hover {
+            /* steps already visited */
+            background-color: #2c3f4c;
+            border-color: #2c3f4c;
+        }
+
+        .breadcrumb li::after {
+            content: "\f054";
+            font-family: "FontAwesome";
+            position: absolute;
+            right: -18px;
+            top: 2px;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .breadcrumb li:last-of-type::after,
+        .breadcrumb li:last-of-type > *::after {
+            /* hide the triangle after the last step */
+            display: none;
+        }
+
+    }
+}

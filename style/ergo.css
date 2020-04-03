@@ -1,0 +1,1279 @@
+/*
+ * This file is part of Moodle - http://moodle.org/
+ * Moodle is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Moodle is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *
+ * Extra elements style sheet
+ *
+ * @package    theme_ergo
+ * @copyright  2020 David Herney
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ *
+ */
+
+#page-login-index {
+    background-image: var(--first-bg-url);
+}
+
+.format-site.admin #region-main {
+    background-color: transparent;
+}
+
+.path-course.pagelayout-course #sidepost-blocks {
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.block_completion_progress .progressBarCell[data-idnumber^="End"] {
+    background-size: contain;
+}
+
+#region-main {
+    border: none;
+    padding: 0;
+}
+
+#region-main > .card.card-block {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+#section-0 {
+    background: #77a182 url(http://localhost/moodle36/theme/ergo/pix/bg_course.png) no-repeat top left;
+    background-size: 100% 330px;
+}
+
+#section-0 .instancename,
+#seccion-0 .section-modchooser-text,
+#section-0 .action-menu .dropdown-toggle {
+    color: #fff;
+}
+
+.format-onetopic .tab_content {
+    font-size: 18px;
+}
+
+/********************************************************************************/
+/* GENERAL SECTION
+*********************************************************************************/
+.eva-general-description {
+    display: flex;
+    justify-content: center;
+}
+
+.eva-general-welcome {
+    max-width: 50%;
+}
+
+.eva-generalsection .eva-infocategory {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.eva-generalsection .eva-infocategory .eva-titleicon {
+    font-family: FontAwesome;
+    font-size: 50px;
+    color: #77a182;
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 3px solid #77a182;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.eva-infocategory .eva-titleicon:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #77a182;
+    font-style: normal;
+}
+
+.eva-introduction .eva-titleicon:before {
+    content: "";
+}
+
+.eva-resources .eva-titleicon:before {
+    content: "";
+}
+
+.eva-communication .eva-titleicon:before {
+    content: "";
+}
+
+.eva-activities .eva-titleicon:before {
+    content: "";
+}
+
+#page-content #region-main .eva-generalsection .eva-infocategory h2 {
+    font-size: 16px;
+    line-height: 12px;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    padding: 15px 10px;
+    margin-top: 20px;
+    background: url([[pix:theme|bgtitle_1]]) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#page-content #region-main .eva-generalsection.ingenieria .eva-infocategory h2 {
+    background-image: url([[pix:theme|bgtitle_2]]);
+}
+
+#page-content #region-main .eva-generalsection.salud .eva-infocategory h2 {
+    background-image: url([[pix:theme|bgtitle_3]]);
+}
+
+.eva-generalsection .eva-infocategory p {
+    text-align: left;
+}
+
+
+/********************************************************************************/
+/* CONTENT SECTION
+ *********************************************************************************/
+.eva-topic-phases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.eva-topic-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.eva-topic-details {
+    border-top: 1px solid #b6b9bd;
+    padding-top: 20px;
+    display: flex;
+}
+
+.eva-topic-details > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eva-topic-details > div:nth-child(2) {
+    border-left: 1px solid #b6b9bd;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.eva-topic-dates {
+    padding-left: 75px;
+    background: url([[pix:theme|fechas]]) no-repeat left center;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.eva-topic-dates p {
+    margin: 0;
+}
+
+.eva-generalsection hr,
+.eva-topicsection hr {
+    box-shadow: unset;
+    border: 1px solid #ccc;
+    height: auto;
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.eva-generalsection hr:after,
+.eva-topicsection hr:after {
+    content: "";
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -21px;
+    left: calc(50% - 20px);
+    border: 20px solid #ccc;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(-45deg);
+}
+
+.eva-resourcebutton {
+    width: 207px;
+    margin: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.eva-resourcebutton a,
+.eva-resourcebutton a:hover {
+    text-decoration: none;
+}
+
+.eva-resourcebutton .eva-rb-name {
+    position: relative;
+    color: #fff;
+    background-color: #3d4251;
+}
+
+.eva-resourcebutton .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton .eva-rb-name a:before {
+    font-family: "FontAwesome";
+    position: absolute;
+    color: #3d4251;
+    left: -20px;
+    top: 0px;
+    font-size: 24px;
+    line-height: 34px;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #25282e;
+}
+
+.eva-resourcebutton.eva-rb-forum .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton.eva-rb-forum .eva-rb-name a:before {
+    content: "";
+}
+
+.eva-resourcebutton.eva-rb-assign .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton.eva-rb-assign .eva-rb-name a:before {
+    content: "";
+}
+
+.eva-resourcebutton.eva-rb-content .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton.eva-rb-content .eva-rb-name a:before {
+    content: "";
+}
+
+.eva-resourcebutton.eva-rb-db .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton.eva-rb-db .eva-rb-name a:before {
+    content: "";
+}
+
+.eva-resourcebutton.eva-rb-work .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton.eva-rb-work .eva-rb-name a:before {
+    content: "";
+}
+
+.eva-resourcebutton.eva-rb-survey .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton.eva-rb-survey .eva-rb-name a:before {
+    content: "";
+}
+
+.eva-resourcebutton.eva-rb-glossary .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton.eva-rb-glossary .eva-rb-name a:before {
+    content: "";
+}
+
+.eva-resourcebutton.eva-rb-chat .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton.eva-rb-chat .eva-rb-name a:before {
+    content: "";
+}
+
+.eva-resourcebutton.eva-rb-wiki .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton.eva-rb-wiki .eva-rb-name a:before {
+    content: "✍";
+}
+
+.eva-resourcebutton.eva-rb-grade .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton.eva-rb-grade .eva-rb-name a:before {
+    content: "✔";
+}
+
+.eva-resourcebutton.eva-rb-scorm .completiontag .dimmed.dimmed_text:before,
+.eva-resourcebutton.eva-rb-scorm .eva-rb-name a:before {
+    content: "";
+}
+
+.eva-resourcebutton .completiontag .dimmed.dimmed_text,
+.eva-resourcebutton .eva-rb-name a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px 5px 25px;
+    background-color: #3d4251;
+    color: #fff !important;
+    min-height: 40px;
+}
+
+.eva-resourcebutton .completiontag .dimmed.dimmed_text.contentwithoutlink {
+    min-height: unset;
+}
+
+.eva-resourcebutton.complete .eva-rb-name a {
+    background-color: #79b061;
+}
+
+.eva-resourcebutton.complete .eva-rb-name a:before {
+    color: #79b061;
+    border-color: #79b061;
+}
+
+.eva-resourcebutton .eva-rb-name a:hover {
+    background-color: #afcc91;
+}
+
+.eva-resourcebutton .eva-rb-name a:hover:before {
+    color: #afcc91;
+    border-color: #79b061;
+}
+
+.eva-resourcebutton img.activityicon,
+.eva-resourcebutton .autocompletion,
+.eva-resourcebutton .togglecompletion {
+    display: none;
+}
+
+.eva-resourcebutton .eva-rb-type {
+    border: 1px solid #000;
+}
+
+.eva-resourcebutton.complete:after {
+    content: "";
+    font-family: "FontAwesome";
+    color: #79b061;
+    position: absolute;
+    right: -11px;
+    top: -5px;
+    font-size: 25px;
+    line-height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.eva-resourcebutton.active .eva-rb-name,
+.eva-resourcebutton.complete .eva-rb-name {
+    background-color: #8ad2d9;
+    border-color: #8ad2d9;
+}
+
+.eva-resourcebutton .completiontag .dimmed.dimmed_text:after {
+    content: "";
+    font-family: "FontAwesome";
+    position: absolute;
+    color: #8c8c8c;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+    font-size: 65px;
+    line-height: 20px;
+    opacity: 0.4;
+}
+
+
+.eva-resourcebutton span.unread {
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    right: 0;
+    font-size: 11px;
+}
+
+.eva-resourcebutton .eva-rb-name span.unread a:before {
+    content: "";
+}
+
+/************************************************************************************/
+/* TOPICS
+/************************************************************************************/
+.eva-infocategory video,
+.eva-infocategory.eva-custom-deco img {
+    min-width: 300px;
+}
+
+.eva-topic-description .eva-infocategory {
+    border-right: solid #fff 5px;
+    border-left: solid #fff 5px;
+    padding: 30px;
+}
+
+.eva-topic-description .eva-infocategory:first-child,
+.eva-topic-description .eva-infocategory:last-child {
+    border: none;
+}
+
+.eva-topic-description .eva-infocategory:nth-child(2) {
+    border-left: 10px solid #fff;
+}
+
+#page-content #region-main .eva-topic-description .eva-infocategory h2 {
+    font-size: 40px;
+    color: #3d4251 !important;
+    text-align: left;
+    font-weight: bold;
+}
+
+#page-content #region-main .eva-topic-description .eva-infocategory h3 {
+    font-size: 28px;
+    color: #70967a !important;
+    text-align: left;
+    border-left: none;
+}
+
+.eva-topic-description .eva-infocategory h2 strong {
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #d99830;
+    font-weight: 700;
+}
+
+.eva-phase {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.eva-phase-head {
+    display: inline-block;
+    padding: 20px 30px 10px;
+    background-color: #749c7f;
+    color: #fff;
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.eva-phase-head:before {
+    content: "";
+    width: 66px;
+    height: 66px;
+    background: #fff var(--course-sprite-url) no-repeat -562px -249px;
+    position: absolute;
+    left: calc(50% - 33px);
+    top: -50px;
+    border-radius: 50%;
+}
+
+.eva-phase-head.eva-icon-lupa:before {
+    background-position: -362px -35px;
+}
+
+.eva-phase-head.eva-icon-lapiz:before {
+    background-position: -362px -248px;
+}
+
+.eva-collapse i {
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-size: 28px !important;
+    color: #666666;
+}
+
+.eva-phase-name {
+    font-size: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 20px;
+    background: url([[pix:theme|bgtitle_1]]) no-repeat;
+    background-size: cover;
+    padding: 6px 20px;
+    background-position: center;
+    min-width: 320px;
+}
+
+.eva-topicsection.ingenieria .eva-phase-name {
+    background-image: url([[pix:theme|bgtitle_2]]);
+}
+
+.eva-topicsection.salud .eva-phase-name {
+    background-image: url([[pix:theme|bgtitle_3]]);
+}
+
+.eva-phase-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.eva-phase.eva-collapsed .eva-phase-body {
+    display: none;
+}
+
+.eva-phase-steps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eva-phase-step {
+    width: 230px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #323232;
+    padding: 0 10px;
+    margin-right: 40px;
+}
+
+.eva-phase-union {
+    border: 3px solid #77a182;
+    border-radius: 20px;
+}
+
+.eva-phase-head .fa-plus-circle {
+    display: none;
+}
+
+.eva-collapsed .fa-plus-circle {
+    display: unset;
+}
+
+.eva-collapse:before {
+    content: "";
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-size: 28px !important;
+    color: #666666;
+}
+
+.eva-collapsed .eva-collapse:before {
+    content: "";
+}
+
+.eva-collapsed .fa-minus-circle {
+    display: none;
+}
+
+.eva-resourcebutton .completiontag > form.togglecompletion {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#page-course-view-onetopic #completionprogressid {
+    display: none;
+}
+
+.format-onetopic .onetopic .content > .summary .eva-resourcebutton .iconhelp {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #e7b12e;
+}
+
+.format-onetopic .onetopic .content > .summary .eva-resourcebutton .iconhelp i {
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/************************************************************************************/
+/* COMPLETION
+/************************************************************************************/
+.block_completion_progress .progressBarCell {
+    height: 65px;
+}
+
+.block_completion_progress .progressEventInfo,
+.block_completion_progress .progressPercentage {
+    font-size: 13px;
+}
+
+.block_completion_progress .progressEventInfo .iconInInfo {
+    display: none;
+}
+
+.block_completion_progress .progressBarCell[data-idnumber^="End"] {
+    background: url([[pix:theme|icon_lock]]) no-repeat center center;
+    background-size: 90%;
+}
+
+.block_completion_progress .progressBarCell[data-idnumber^="End"][style*="#73A839"] {
+    background-image: url([[pix:theme|icon_unlock]]);
+}
+
+/********************************************************************************/
+/* Float window
+/********************************************************************************/
+.tepuy-wf {
+    position: absolute;
+    padding: 10px 15px;
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #bbb;
+}
+
+.tepuy-wf.tepuy-autox {
+    left: 10px;
+    right: 10px;
+    overflow: auto;
+}
+
+.tepuy-wf.tepuy-autoy {
+    top: 10px;
+    bottom: 10px;
+    overflow: auto;
+}
+
+.moodle-dialogue-bd .tepuy-body {
+    overflow: auto;
+}
+
+.tepuy-wf.tepuy-autox .tepuy-body, .tepuy-wf.tepuy-autoy .tepuy-body {
+    overflow: auto;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.tepuy-wf .tepuy-close {
+    position: absolute;
+    background-color: #5a9faf;
+    border-radius: 5px;
+    border: 2px solid #666666;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.tepuy-wf .tepuy-close:hover {
+    background-color: #fbdb9b;
+    color: #666666;
+}
+
+.tepuy-wf-box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.moodle-dialogue-bd .tepuy-body .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/********************************************************************************/
+/* MORE + MODAL
+/********************************************************************************/
+.eva-more {
+    text-align: right;
+}
+
+.eva-more.eva-more-left {
+    text-align: left;
+    margin-left: 50px;
+    width: 100%;
+}
+
+.eva-more > span {
+    color: #7e858c;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.eva-more > span:before {
+    content: "";
+    font-family: "simple-line-icons";
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+.eva-more > span:hover {
+    color: #63ab22;
+    text-decoration: underline;
+}
+
+.eva-more .modal-body {
+    text-align: left;
+}
+
+.course-content ul.topics li.section .content .eva-generalsection h4.modal-title,
+.course-content ul.topics li.section .content .eva-topicsection h4.modal-title {
+    background: unset;
+    color: #522e90;
+    width: auto;
+    margin: auto;
+}
+
+.modal-header .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.eva-block-title1 {
+    background-color: #f3f4f6;
+    color: #1e3642;
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.eva-block-title2 {
+    background-color: #47657c;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.toggle-view {
+    display: flex;
+}
+
+.toggle-view > div {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.toggle-view .left {
+    padding-right: 40px;
+}
+
+.toggle-view .right {
+    padding-left: 40px;
+}
+
+.arrow-right,
+.arrow-left {
+    background: #47657c var(--first-bg-url) no-repeat;
+    background-size: cover;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+}
+
+.arrow-right {
+    border-radius: 10px 0 0 10px;
+    left: 0;
+}
+
+.arrow-left {
+    border-radius: 0 10px 10px 0;
+    right: 0;
+}
+
+.arrow-right:before {
+    content: "";
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 40px;
+    top: calc(50% - 30px);
+    left: 0;
+    color: #fff;
+}
+
+.arrow-left:before {
+    content: "";
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 40px;
+    top: calc(50% - 30px);
+    left: 0;
+    color: #fff;
+}
+
+.contenido-metodologia > div {
+    margin-bottom: 20px;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido-metodologia > .eva-block-title1,
+.contenido-metodologia > .eva-block-title2 {
+    display: block;
+}
+
+.contenido-metodologia > .eva-block-title2 {
+    background-color: #47657c;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.contenido-metodologia > .eva-block-title2 img {
+    position: absolute;
+    bottom: 0;
+}
+
+.contenido-metodologia .eva-subtitle {
+    padding: 15px;
+    color: #3a4f5a;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    background-color: rgba(243, 244, 246, 0.8);
+}
+
+.contenido-metodologia h5 {
+    color: #293a47;
+    text-decoration: none;
+    margin: 0;
+    font-size: 20px;
+}
+
+.contenido-metodologia .eva-special-dates {
+    margin-left: 10px;
+}
+
+.metodologia-objetivo {
+    height: 170px;
+}
+
+.metodologia-objetivo h5 {
+    margin-bottom: 10px;
+}
+
+.metodologia-objetivo > div:first-child {
+    padding: 20px 0 0 20px;
+    width: 50%;
+}
+
+.metodologia-objetivo img {
+    max-width: 100%;
+}
+
+.metodologia-plantea {
+    height: 170px;
+}
+
+.metodologia-plantea img {
+    height: 150px;
+    max-width: 200px;
+}
+
+.metodologia-plantea .eva-subtitle {
+    border-right: 5px solid #fff;
+    flex: 0 0 210px;
+}
+
+.metodologia-sliders {
+    display: flex;
+    max-width: 700px;
+}
+
+.metodologia-sliders .slide {
+    position: relative;
+    display: flex;
+    padding: 10px 40px 10px 10px;
+}
+
+.metodologia-sliders .slide p {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.metodologia-sliders .slide1 {
+    flex-direction: row-reverse;
+}
+
+.metodologia-secciones {
+    justify-content: space-between;
+    background-color: transparent !important;
+}
+
+.metodologia-secciones > div {
+    padding: 15px;
+    background-color: #f3f4f6;
+}
+
+.metodologia-secciones.rx2 > div {
+    width: 46%;
+}
+
+.metodologia-secciones.rx3 > div {
+    width: 32%;
+}
+
+.metodologia-secciones.rx4 > div {
+    width: 22%;
+}
+
+.metodologia-secciones.rx5 > div {
+    width: 18%;
+}
+
+.metodologia-secciones h5 {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+
+.eva-special-dates {
+    background-color: #293a47;
+    display: flex;
+    float: left;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 10px;
+}
+
+.eva-special-dates > div {
+    padding: 0 10px;
+    border-right: 1px solid #fff;
+}
+
+.eva-special-dates > div:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.eva-special-dates label {
+    display: block;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.tepuy-body {
+    position: absolute;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    top: 45px;
+}
+
+.tepuy-body iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.tepuy-openinmodal-container {
+    position: absolute;
+    top: 45px;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.pagelayout-popup #page {
+    margin: 0;
+}
+
+
+.instructions {
+    display: block !important;
+    font-size: 12px;
+    background-color: transparent !important;
+}
+
+.help-arrow {
+    position: relative;
+    height: 20px;
+    border-radius: 0;
+    width: 17px;
+    display: inline-block;
+    cursor: unset;
+}
+
+.help-arrow:before {
+    font-size: 20px;
+    line-height: 20px;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+
+.eva-top {
+    display: flex;
+    align-items: center;
+}
+
+.eva-top .eva-top-title {
+    border-left: 4px solid #fff;
+    padding: 0 10px 0 20px;
+    font-size: 28px;
+    color: #fff;
+    line-height: 29px;
+}
+
+.eva-top-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eva-top-icons ul {
+    margin: 0;
+    padding: 0;
+}
+
+.eva-top-icons li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+    position: relative;
+}
+
+.eva-top-icons li a {
+    padding: 5px;
+    border-radius: 15px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 90px;
+    color: #77a182;
+}
+
+.eva-top-icons li a:hover {
+    background-color: #afcc91;
+    color: #fff;
+    text-decoration: none;
+}
+
+.eva-top-icons li a:before {
+    position: absolute;
+    left: 37px;
+    top: 20px;
+    background: var(--course-sprite-url);
+    content: "";
+    width: 70px;
+    height: 55px;
+}
+
+.eva-top-icons li a:hover:before {
+    background-position: 0 -80px;
+}
+
+.eva-top-icons li.icon-events a:before {
+    background-position: 0 -150px;
+    width: 88px;
+    height: 69px;
+    left: 41px;
+    top: 15px;
+}
+
+.eva-top-icons li.icon-events a:hover:before {
+    background-position: 0 -230px;
+}
+
+.eva-top-icons li.icon-pqr a:before {
+    background-position: 0 -325px;
+    width: 40px;
+    height: 69px;
+    left: 55px;
+    top: 10px;
+}
+
+.eva-top-icons li.icon-pqr a:hover:before {
+    background-position: -60px -325px;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+.eva-sliders {
+    display: flex;
+    overflow: auto;
+}
+
+.eva-sliders .slide {
+    position: relative;
+    display: flex;
+    padding: 10px 40px;
+}
+
+.regular-padding {
+    padding: 15px;
+}
+
+/********************************************************************************/
+/* SIZE ADJUSTMENT
+*********************************************************************************/
+ @media (max-width:800px) {
+     .eva-topic-description {
+         display: unset;
+     }
+
+     .eva-topic-description .eva-infocategory {
+         width: auto;
+     }
+
+     .eva-phase-name {
+         padding-left: 5px;
+         font-size: 20px;
+     }
+
+ }
+
+ @media (max-width:512px) {
+     #page-navbar .breadcrumb-nav .breadcrumb {
+        padding: 0.2em;
+        max-height: 80px;
+        overflow: auto;
+     }
+
+     #page.container-fluid {
+        padding: 1rem 0.2rem 0 0.2rem;
+     }
+
+     #region-main {
+        padding: 0.3rem;
+     }
+
+     #region-main > .card.card-block {
+        padding: 0.3rem;
+     }
+
+     #page-course-view-onetopic #section-0 ul.section {
+        margin: 0;
+        padding: 0;
+     }
+
+     #page-course-view-onetopic #section-0 .section .label .mod-indent-outer {
+        padding: 0;
+     }
+
+     #page-course-view-onetopic #section-0 .section .label .contentwithoutlink,
+     .path-site li.activity > div, .path-course-view li.activity > div {
+         padding: 0;
+     }
+
+     .eva-generalsection .eva-infocategory {
+         width: auto;
+     }
+
+     .eva-generalsection,
+     .eva-mod-description {
+         display: unset;
+     }
+
+     .eva-topic-description .eva-infocategory {
+         padding: 0px;
+     }
+
+     .course-content ul.topics li.section .summary {
+         margin-left: 0;
+     }
+
+     .eva-phase-name {
+         min-width: unset;
+     }
+
+     .eva-topic-details {
+         display: block;
+     }
+
+     .eva-topic-details > div {
+         width: unset;
+     }
+
+    .eva-topic-details > div:nth-child(2) {
+         border-left: none;
+    }
+
+    .eva-topic-description .eva-infocategory:nth-child(2) {
+         border-left: none;
+    }
+
+    .contenido-metodologia > div {
+         flex-wrap: wrap;
+    }
+
+    .metodologia-objetivo,
+    .metodologia-plantea {
+        height: unset;
+    }
+
+    .metodologia-plantea .eva-subtitle {
+        border-bottom: 5px solid #fff;
+        flex: 100%;
+    }
+
+    .metodologia-secciones {
+        display: unset !important;
+    }
+
+    .metodologia-secciones.rx2 > div,
+    .metodologia-secciones.rx3 > div,
+    .metodologia-secciones.rx4 > div,
+    .metodologia-secciones.rx5 > div {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .metodologia-sliders .slide {
+        display: unset;
+    }
+
+    .contenido-metodologia > .eva-block-title2 {
+        padding-right: 95px;
+    }
+
+    .contenido-metodologia > .eva-block-title2 img {
+        right: 0;
+    }
+ }
+

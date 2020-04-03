@@ -1,0 +1,23 @@
+<section id="box-logos">
+    <h2>{{#str}}logostitle, theme_ergo{{/str}}</h2>
+
+    <div class="horizontalslider flexslider" data-autoplay="true" data-loop="true" data-width="200">
+        <ul class="slides">
+        {{#logos}}
+            <li class="one-logo">
+                {{#image}}
+                    {{#url}}<a href="{{{ url }}}" target="_blank">{{/url}}
+                    <img src="{{{ image }}}" title="{{ content }}" />
+                    {{#url}}</a>{{/url}}
+                {{/image}}
+
+                {{^image}}
+                    {{#url}}<a href="{{{ url }}}" target="_blank">{{/url}}
+                            {{{ content }}}
+                    {{#url}}</a>{{/url}}
+                {{/image}}
+            </li>
+        {{/logos}}
+        </ul>
+    </div>
+</section>
