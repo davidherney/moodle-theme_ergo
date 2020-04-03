@@ -51,7 +51,7 @@
 }
 
 #section-0 {
-    background: #77a182 url(http://localhost/moodle36/theme/ergo/pix/bg_course.png) no-repeat top left;
+    background: #77a182 url('[[pix:theme|bg_course]]') no-repeat top left;
     background-size: 100% 330px;
 }
 
