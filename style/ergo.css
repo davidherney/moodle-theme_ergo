@@ -80,6 +80,9 @@
 .eva-generalsection .eva-infocategory {
     width: 30%;
     margin-bottom: 30px;
+    border-right: solid #fff 5px;
+    border-left: solid #fff 5px;
+    padding: 30px;
 }
 
 .eva-generalsection .eva-infocategory .eva-titleicon {
@@ -407,6 +410,7 @@
 /************************************************************************************/
 /* TOPICS
 /************************************************************************************/
+.eva-general-welcome video,
 .eva-infocategory video,
 .eva-infocategory.eva-custom-deco img {
     min-width: 300px;
