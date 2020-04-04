@@ -73,8 +73,13 @@
     justify-content: center;
 }
 
+.eva-general-info,
 .eva-general-welcome {
     max-width: 50%;
+}
+
+.eva-general-welcome {
+    padding: 20px 50px;
 }
 
 .eva-generalsection .eva-infocategory {
