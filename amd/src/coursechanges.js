@@ -211,7 +211,7 @@ define(['jquery', 'core/modal_factory'], function($, ModalFactory) {
                 } else if ($this.attr('data-tepuy-innerautolink')) {
 
                     if ($this.find('a.autolink').length > 0) {
-                        var url = $this.find('a.autolink').attr('href') + '&inpopup=true';
+                        var url = $this.find('a.autolink').attr('href') + '&inpopup=true&redirect=1';
                         $this.find('a.autolink').hide();
 
                         var $iframe = $('<iframe></iframe>');
@@ -314,7 +314,7 @@ define(['jquery', 'core/modal_factory'], function($, ModalFactory) {
                         var w = $this.attr('data-property-width');
                         var h = $this.attr('data-property-height');
 
-                        var url = $link.attr('href') + '&inpopup=true';
+                        var url = $link.attr('href') + '&inpopup=true&redirect=1';
                         var $iframe = $('<iframe class="tepuy-openinmodal-container"></iframe>');
                         $iframe.attr('src', url);
                         $iframe.on('load', function() {
