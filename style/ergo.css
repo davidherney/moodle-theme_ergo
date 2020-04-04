@@ -76,6 +76,9 @@
 .eva-general-info,
 .eva-general-welcome {
     max-width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .eva-general-welcome {
