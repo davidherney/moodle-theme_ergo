@@ -551,6 +551,9 @@
 .eva-phase-union {
     border: 3px solid #77a182;
     border-radius: 20px;
+    width: auto;
+    margin: 0 10px 10px;
+    padding: 0 0 0 10px;
 }
 
 .eva-phase-head .fa-plus-circle {
