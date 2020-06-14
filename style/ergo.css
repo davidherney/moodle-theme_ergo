@@ -605,6 +605,24 @@
     font-weight: bold;
 }
 
+.eva-phase-head[data-dhbg-toggle] {
+    cursor: pointer;
+    display: flex;
+    padding: 0 10px;
+}
+
+.eva-phase-head[data-dhbg-toggle]:before {
+    content: none;
+}
+
+.eva-phase-head[data-dhbg-toggle] .eva-phase-name {
+    background: none;
+}
+
+.eva-phase-head[data-dhbg-toggle] .eva-collapse::before {
+    color: #fff;
+}
+
 /************************************************************************************/
 /* COMPLETION
 /************************************************************************************/
