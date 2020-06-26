@@ -404,15 +404,11 @@
 
 
 .eva-resourcebutton span.unread {
-    position: absolute;
-    left: 0;
-    bottom: 6px;
-    right: 0;
     font-size: 11px;
 }
 
-.eva-resourcebutton .eva-rb-name span.unread a:before {
-    content: "";
+.eva-resourcebutton .eva-rb-name span.unread a::before {
+    display: none;
 }
 
 /************************************************************************************/
@@ -1186,9 +1182,6 @@
 /* SIZE ADJUSTMENT
 *********************************************************************************/
  @media (max-width:800px) {
-     .eva-topic-description {
-         display: unset;
-     }
 
      .eva-topic-description .eva-infocategory {
          width: auto;
