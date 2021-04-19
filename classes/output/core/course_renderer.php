@@ -22,9 +22,16 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace theme_ergo\output\core;
+
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->dirroot . '/course/renderer.php');
+use moodle_url;
+use html_writer;
+use core_course_category;
+use coursecat_helper;
+use stdClass;
+use core_course_list_element;
 
 /**
  * Course renderer class.
@@ -33,7 +40,7 @@ require_once($CFG->dirroot . '/course/renderer.php');
  * @copyright  2020 David Herney
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class theme_ergo_core_course_renderer extends \theme_boost\output\core\course_renderer {
+class course_renderer extends \core_course_renderer {
 
 
     /**

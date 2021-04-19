@@ -84,9 +84,6 @@ $THEME->extrascsscallback = 'theme_ergo_get_extra_scss';
 // Process pre scss to our final stylesheet.
 $THEME->prescsscallback = 'theme_ergo_get_pre_scss';
 
-// Add a custom icon system to the theme.
-$THEME->iconsystem = '\theme_ergo\util\icon_system';
-
 $THEME->layouts = [
     // Most backwards compatible layout without the blocks - this is the layout used by default.
     'base' => array(
