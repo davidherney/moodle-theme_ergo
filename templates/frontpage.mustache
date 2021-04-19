@@ -69,7 +69,7 @@
         <div id="page-content" class="row">
             <div id="region-main-box" class="col-xs-12">
                 {{#hasregionmainsettingsmenu}}
-                <div id="region-main-settings-menu" class="hidden-print">
+                <div id="region-main-settings-menu" class="d-print-none">
                     <div> {{{ output.region_main_settings_menu }}} </div>
                 </div>
                 {{/hasregionmainsettingsmenu}}
@@ -94,7 +94,7 @@
                         </div>
                         {{#haspostblocks}}
                             <div class="col-md-4 col-sidepost-blocks">
-                                <section id="sidepost-blocks" data-region="blocks-column-inner" class="hidden-print">
+                                <section id="sidepost-blocks" data-region="blocks-column-inner" class="d-print-none">
                                     {{{ sidepostblocks }}}
                                 </section>
                             </div>
