@@ -1,7 +1,7 @@
 THEME Ergo
 ============================
 
-Package tested in: moodle 3.6+
+Package tested in: moodle 3.8+
 
 QUICK INSTALL
 ==============
@@ -16,5 +16,8 @@ Ergo is based in Moove and boost Moodle themes.
 
 IN VERSION
 =============
+2021041800:
+Moodle 3.8+ compatibility
+
 2020040200:
 Start open repository
